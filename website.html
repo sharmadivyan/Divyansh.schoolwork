@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Problem Generator</title>
+  <link rel="stylesheet" href="stle.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Math Problem Generator</h1>
+    <div class="settings">
+      <label for="num-problems">Number of problems:</label>
+      <input type="number" id="num-problems" name="num-problems" required>
+      <label for="num-digits">Number of digits:</label>
+      <input type="number" id="num-digits" name="num-digits" required>
+      <label for="problem-type">Problem type:</label>
+      <select id="problem-type" name="problem-type">
+        <option value="addition">Addition</option>
+        <option value="subtraction">Subtraction</option>
+        <option value="multiplication">Multiplication</option>
+        <option value="division">Division</option>
+      </select>
+      <button id="generate-button">Generate Problems</button>
+      <button id="show-answers-button">Show Answers</button>
+    </div>
+    <div class="problem-container"></div>
+  </div>
+  <script src="back.js"></script>
+</body>
+</html>
